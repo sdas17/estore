@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from 'src/header/header.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { CatNavigationComponent } from 'src/cat-navigation/cat-navigation.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    CatNavigationComponent
   ],
   imports: [
     BrowserModule,

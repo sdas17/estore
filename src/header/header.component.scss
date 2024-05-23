@@ -1,3 +1,7 @@
+$search-bar-background-color:#dadada;
+$search-bar-height:2.5em;
+$search-bar-border:none;
+
 .header{
     max-width: 100%;
     box-shadow: 5px 5px 20px gray;
@@ -6,24 +10,52 @@
     color: #ffff;
     margin-left: 2%;
     padding: 0.8em;
-    width: 23%;
+    width: 16%;
+}
+
+.dropdown{
+    width: 15%;
+    height: $search-bar-height;
+    border: $search-bar-border;
+    background-color: $search-bar-background-color;
+    font-weight: 600;
 }
 .search-text{
     width: 75%;
-    height: 2.5em;
+    height: $search-bar-height;
     display: inline-block;
-    border: none;
+    border: $search-bar-border;
 }
 .search-buttom{
   width: 10%;
-  height: 2.5em;
-  border: none ;
-  background-color: wheat;
+  height: $search-bar-height;
+  border: $search-bar-border ;
+  background-color:$search-bar-background-color;
 }
-.dropdown{
-    width: 15%;
-    height: 2.5em;
-    border: none;
-    background-color: wheat;
-    font-weight: 600;
-}
+
+
+
+
+
+
+
+/* Add this to your styles.css or component CSS file */
+.login-container .btn-link {
+    color: #555;
+    display: flex;
+    align-items: center;
+    margin-right: 17px;
+    text-decoration: none;
+    border: 1px solid lightblue;
+    margin-top: -89px;
+  }
+  
+  .login-container .btn-link .material-icons {
+    margin-right: 5px;
+  }
+  
+  .login-container .btn-link:hover {
+    color: #007bff;
+    text-decoration: none;
+  }
+  

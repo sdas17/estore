@@ -1,0 +1,37 @@
+@import"../../../../styles.scss";
+
+.side-navigation {
+    margin-top: 1em;
+    padding: 0.6em;
+    box-shadow: 1px 14px 0px lightgrey;
+    height: 97%;
+    border-radius: 1em;
+}
+
+.side-title {
+    padding: 1em;
+}
+
+.side-title h3 {
+    text-align: center;
+}
+
+.individual-category {
+    padding: 1em;
+}
+
+.individual-category ul {
+    padding: 0;
+}
+
+.class-item {
+    text-align: center;
+    margin-bottom: 0.6em;
+    list-style: none;
+}
+
+.class-item a {
+    text-decoration: none;
+    color: black;
+    @include underline-transition(1.1);
+}

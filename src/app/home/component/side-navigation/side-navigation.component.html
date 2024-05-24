@@ -1,0 +1,24 @@
+<div class="side-navigation">
+    <div class="side-title">
+        <h3>Category</h3>
+    </div>
+    <div class="accordion" id="accordionExample">
+        <div *ngFor="let maincategory of getCategories();let i =index" class="accordion-item individual-category">
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    [attr.data-bs-target]=" '#collapseOne' + i" aria-expanded="true" aria-controls="collapseOne">
+                    <div class="category-title"><a href="#">{{maincategory.category}}</a></div>
+                </button>
+            </h2>
+            <div [id]="'collapseOne' + i" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <ul>
+                        <li *ngFor="let subcategory of getCategories(maincategory.id)" class="class-item"><a href="#">{{subcategory.category}}</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+      
+    </div>
+</div>

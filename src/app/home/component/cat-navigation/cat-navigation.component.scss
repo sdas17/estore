@@ -1,3 +1,5 @@
+@import"../../../../styles.scss";
+
 .navigation-car {
     max-width: 100%;
     background-color: black;
@@ -17,25 +19,7 @@
         font-size: 0.9em;
         font-weight: 700px;
         position: relative; // Required for positioning the pseudo-element
-  
-        &::after {
-          content: '';
-          display: block;
-          position: absolute; // Ensure it's positioned relative to the anchor
-          bottom: -2px; // Adjust as needed
-          left: 0;
-          height: 0.2em;
-          width: 100%; // Full width of the link
-          background-color: red;
-          transform: scaleX(0);
-          transform-origin: bottom right;
-          transition: transform 0.2s ease-out;
-        }
-  
-        &:hover::after {
-          transform: scaleX(1);
-          transform-origin: bottom left;
-        }
+     @include underline-transition(1.1);
       }
     }
   }

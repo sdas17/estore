@@ -4,6 +4,7 @@ import { HomeComponent } from './home.component';
 import { HeaderComponent } from './component/header/header.component';
 import { CatNavigationComponent } from './component/cat-navigation/cat-navigation.component';
 import { SideNavigationComponent } from './component/side-navigation/side-navigation.component';
+import { ProductsComponent } from './component/products/products.component';
 
 
 
@@ -12,7 +13,8 @@ import { SideNavigationComponent } from './component/side-navigation/side-naviga
     HomeComponent,
     HeaderComponent,
     CatNavigationComponent,
-    SideNavigationComponent
+    SideNavigationComponent,
+    ProductsComponent
   ],
   imports: [
     CommonModule

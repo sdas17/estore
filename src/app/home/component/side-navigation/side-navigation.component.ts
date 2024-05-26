@@ -9,16 +9,13 @@ import { category } from '../types/category.types';
 })
 export class SideNavigationComponent {
   categories: category[] = [];
-
-  constructor(private categoryService: CategoryService) {}
-
-  ngOnInit() {
-    this.categories = this.categoryService.getAllCategories();
-    console.log(this.categories);
-    
+  constructor(categoryService: CategoryService) {
+    this.categories = categoryService.getAllCategories();
   }
 
   getCategories(parentCategoryId?: number): category[] {
-    return this.categories.filter(category => category.parent_category_id === parentCategoryId);
+    return this.categories.filter(
+      (category) => category.parent_category_id === parentCategoryId
+    );
   }
 }
